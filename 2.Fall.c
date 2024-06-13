@@ -29,9 +29,13 @@ char* strcombine(char* a, char* b)
         {
             c[x] = a[i];
             i++;
+            x++;
         }
 
-        c[x + 1] = b[j];
+        if(b[i] != '\0')
+        {
+            c[x] = b[j];
+        }
 
         j++;
         x ++;
