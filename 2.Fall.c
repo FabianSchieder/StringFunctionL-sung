@@ -35,10 +35,9 @@ char* strcombine(char* a, char* b)
         if(b[i] != '\0')
         {
             c[x] = b[j];
+            j++;
+            x ++;
         }
-
-        j++;
-        x ++;
     }
 
     c[x] = '\0';
